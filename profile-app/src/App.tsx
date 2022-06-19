@@ -1,12 +1,19 @@
 import React from 'react';
+import styled, { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from './styles/theme';
 import { Link, Routes, Route } from 'react-router-dom';
 import { About } from './scenes/About';
 import { Home } from './scenes/Home/index';
 
 
+const Body = styled.div`
+  background-color: ${props => props.theme.colors.background}
+`
+
 function App() {
   return (
-    <div className="App">
+  <ThemeProvider theme={darkTheme}>
+    <Body className="App">
       <nav>
          <ul id="navigation">
              <li>
@@ -21,7 +28,8 @@ function App() {
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}/ >
       </Routes>
-    </div>
+    </Body>
+  </ThemeProvider>
   );
 }
 
