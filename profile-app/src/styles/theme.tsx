@@ -3,18 +3,18 @@
 
 const lightColors = {
     colors: {
-        body: '#FFF',
-        text: '#363537',
-        toggleBorder: '#FFF',
-        background: '#363537',
+        primary: '#6E919F',
+        secondary: '#8CBEC3',
+        toggleBorder: '#4C3D2B',
+        background: '#D8BA8A',
     }
 }
 const darkColors = {
     colors: {
-        body: '#363537',
-        text: '#FAFAFA',
-        toggleBorder: '#6B8096',
-        background: '#999',
+        primary: '#FFF',
+        secondary: '#363537',
+        toggleBorder: '#FFF',
+        background: '#363537',
     }
 }
 
