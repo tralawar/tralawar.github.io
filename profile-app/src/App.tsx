@@ -19,7 +19,7 @@ function App() {
   return (
   <ThemeProvider theme={theme === ThemeModeEnum.DARK ? darkTheme : lightTheme}>
     <Body className="App">
-     <MainHeader theme={theme} setTheme={setTheme} />
+     <MainHeader themeMode={theme} setTheme={setTheme} />
      <Routes />
     </Body>
   </ThemeProvider>
